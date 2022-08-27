@@ -1,11 +1,12 @@
 import { Header } from "./Header/Header";
+import { Footer } from "./Footer/Footer";
 
-export const App = () => {
+export default function App() {
   return (
     <div>
       <Header />
-      {/* <Main />
-      <Footer /> */}
+      {/* <Main /> */}
+      <Footer />
     </div>
   );
-};
+}

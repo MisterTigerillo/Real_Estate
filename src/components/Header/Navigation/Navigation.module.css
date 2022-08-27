@@ -1,3 +1,20 @@
 ul {
   padding: 0;
 }
+
+.nav-list {
+}
+
+.navListItem {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 46px;
+}
+
+.navLastItem {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 0;
+}
