@@ -21,7 +21,20 @@ a {
 .container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
   background-color: lightskyblue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.realEstate {
+  /* position; */
+  margin-top: 117px;
+  flex-grow: 1;
 }

@@ -2,7 +2,7 @@ import styles from "./Navigation.module.css";
 export const Navigation = () => {
   return (
     <nav>
-      <ul className="nav-list">
+      <ul className={styles.navList}>
         <a href="/" className={styles.navListItem}>
           Home
         </a>
