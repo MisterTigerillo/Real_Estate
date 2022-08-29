@@ -6,7 +6,7 @@ export const RealEstate = () => {
     <main className="realEstate">
       <Container>
         <img className={styles.headerImage} src={headerImage} alt="" />
-        {console.log({ headerImage })}
+        {/* {console.log({ headerImage })} */}
         I'm Real Estate Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Aliquam temporibus veniam praesentium, hic officiis maiores
         necessitatibus reprehenderit, quo similique dolores dolorum optio

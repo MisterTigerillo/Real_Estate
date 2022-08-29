@@ -1,26 +1,39 @@
+import { NavItem } from "./NavItem/NavItem";
 import styles from "./Navigation.module.css";
+
+const NAV_PAGES = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "About",
+    link: "/",
+  },
+  {
+    label: "Service",
+    link: "/",
+  },
+  {
+    label: "Portfolio",
+    link: "/",
+  },
+  {
+    label: "Blog",
+    link: "/",
+  },
+  {
+    label: "Contact",
+    link: "/",
+  },
+];
 export const Navigation = () => {
   return (
     <nav>
       <ul className={styles.navList}>
-        <a href="/" className={styles.navListItem}>
-          Home
-        </a>
-        <a href="/" className={styles.navListItem}>
-          About
-        </a>
-        <a href="/" className={styles.navListItem}>
-          Service
-        </a>
-        <a href="/" className={styles.navListItem}>
-          Portfolio
-        </a>
-        <a href="/" className={styles.navListItem}>
-          Blog
-        </a>
-        <a href="/" className={styles.navLastItem}>
-          Contact
-        </a>
+        {NAV_PAGES.map(({ label, link }) => (
+          <NavItem key={label} label={label} link={link} />
+        ))}
       </ul>
     </nav>
   );
