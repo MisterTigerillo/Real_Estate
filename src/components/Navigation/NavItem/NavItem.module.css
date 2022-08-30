@@ -1,14 +1,16 @@
-.navListItem {
-  font-family: "DM Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+@value gren from "../../css/variables.css";
+.navItem {
   margin-right: 46px;
-  line-height: 17px;
 }
 
 .navLastItem {
+  margin-right: 0;
+}
+
+.navItemLink {
   font-family: "DM Sans", sans-serif;
   font-size: 13px;
   font-weight: 700;
-  margin-right: 0;
+  line-height: 17px;
+  color: gren;
 }
