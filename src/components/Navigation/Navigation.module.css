@@ -1,7 +1,10 @@
 ul {
   padding: 0;
 }
-
+.navigation {
+  width: 50%;
+  z-index: 1;
+}
 .navList {
   display: flex;
   list-style: none;

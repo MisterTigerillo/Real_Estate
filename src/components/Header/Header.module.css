@@ -1,7 +1,14 @@
 .header {
-  /* position: fixed; */
-  width: 100%;
-  top: 0%;
-  left: 0%;
+  height: 100%;
   background: lightpink;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  background: #bdccff;
+  width: 30vw;
+  height: inherit;
 }

@@ -29,7 +29,7 @@ const NAV_PAGES = [
 ];
 export const Navigation = () => {
   return (
-    <nav>
+    <nav className={styles.navigation}>
       <ul className={styles.navList}>
         {NAV_PAGES.map(({ label, link }) => (
           <NavItem key={label} label={label} link={link} />
