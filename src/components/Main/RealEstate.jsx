@@ -1,9 +1,13 @@
 import { Container } from "components/Container";
-// import styles from "./RealEstate.module.css";
+import Counter from "./Counter/Counter";
+
+import styles from "./RealEstate.module.css";
 export const RealEstate = () => {
   return (
-    <main className="realEstate">
-      <Container>{/* {console.log({ headerImage })} */}</Container>
+    <main className={styles.realEstate}>
+      <Container>
+        <Counter />
+      </Container>
     </main>
   );
 };

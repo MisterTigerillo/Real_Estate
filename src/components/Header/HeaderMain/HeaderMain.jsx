@@ -23,7 +23,7 @@ export const HeaderMain = () => {
             Much did had call new drew that kept. Limits expect wonder law she.
             Now has you views woman noisy match money rooms.
           </p>
-          <div className={styles.go}>
+          <div>
             {" "}
             <input
               className={styles.headerInput}

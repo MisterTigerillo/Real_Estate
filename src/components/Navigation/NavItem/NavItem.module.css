@@ -1,10 +1,5 @@
 @value gren from "../../css/variables.css";
 .navItem {
-  margin-right: 46px;
-}
-
-.navLastItem {
-  margin-right: 0;
 }
 
 .navItemLink {
@@ -13,4 +8,8 @@
   font-weight: 700;
   line-height: 17px;
   color: gren;
+}
+.navItemLink:hover,
+.navItemLink:focus {
+  text-decoration: underline;
 }

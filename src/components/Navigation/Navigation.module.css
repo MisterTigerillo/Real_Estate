@@ -2,11 +2,13 @@ ul {
   padding: 0;
 }
 .navigation {
-  width: 50%;
   z-index: 1;
 }
 .navList {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 46px;
+  row-gap: 5px;
   list-style: none;
   margin: 34px 0;
 }
