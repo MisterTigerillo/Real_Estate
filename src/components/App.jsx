@@ -1,6 +1,6 @@
-import { Header } from "./Header/Header";
-import { RealEstate } from "./Main/RealEstate";
-import { Footer } from "./Footer/Footer";
+import { Header } from "components/Header/Header";
+import { RealEstate } from "components/Main/RealEstate";
+import { Footer } from "components/Footer/Footer";
 
 export default function App() {
   return (

@@ -1,12 +1,12 @@
-import { Logo } from "../Logo/Logo";
-import { Navigation } from "../Navigation/Navigation";
-import { HeaderMain } from "./HeaderMain/HeaderMain";
+import { Logo } from "components/Logo/Logo";
+import { Navigation } from "components/Navigation/Navigation";
+import { HeaderMain } from "components/Header/HeaderMain/HeaderMain";
 import { Container } from "components/Container";
 
-import styles from "./Header.module.css";
+import css from "./Header.module.css";
 
 export const Header = () => (
-  <header className={styles.header}>
+  <header className={css.header}>
     <Container>
       <Logo />
       <Navigation />

@@ -1,7 +1,7 @@
-import styles from "./Logo.module.css";
+import css from "./Logo.module.css";
 export const Logo = () => {
   return (
-    <a href="/" className={styles.logo}>
+    <a href="/" className={css.logo}>
       SmartSpace
     </a>
   );
