@@ -1,16 +1,15 @@
+import PropTypes from "prop-types";
+
 import css from "./HeaderMain.module.css";
 import { ReactComponent as FacebookLogo } from "assets/facebook.svg";
 import { ReactComponent as TwitterLogo } from "assets/twitter.svg";
 import { ReactComponent as LinkedInLogo } from "assets/linkedin.svg";
-import { ReactComponent as Buzz } from "assets/buzz.svg";
-import { ReactComponent as Chase } from "assets/chase.svg";
-import { ReactComponent as Microsoft } from "assets/microsoft.svg";
-import { ReactComponent as Gucc } from "assets/gucc.svg";
-import { ReactComponent as Airbnb } from "assets/airbnb.svg";
-import { ReactComponent as Uber } from "assets/uber.svg";
+
 import headerImage from "assets/headerImage.jpg";
 
-export const HeaderMain = () => {
+import { Partners } from "components/Header/HeaderMain/Partners/Partners";
+
+export const HeaderMain = ({ partners }) => {
   return (
     <div className={css.headerMain}>
       <div className={css.headerHeroInfo}>
@@ -41,15 +40,9 @@ export const HeaderMain = () => {
         <TwitterLogo />
         <LinkedInLogo />
       </div>
-      <div className={css.partners}>
-        <p>Our Amazing Partners</p>
-        <Buzz />
-        <Chase />
-        <Microsoft />
-        <Gucc />
-        <Airbnb />
-        <Uber />
-      </div>
+      <Partners partners={partners} />
     </div>
   );
 };
+
+HeaderMain.propTypes = { partners: PropTypes.array.isRequired };
