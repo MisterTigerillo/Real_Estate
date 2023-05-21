@@ -7,9 +7,9 @@ import { ReactComponent as LinkedInLogo } from "assets/linkedin.svg";
 
 import headerImage from "assets/headerImage.jpg";
 
-import { Partners } from "components/Header/HeaderMain/Partners/Partners";
+import { IconBlock } from "components/Header/HeaderMain/IconBlock/IconBlock";
 
-export const HeaderMain = ({ partners }) => {
+export const HeaderMain = ({ icons }) => {
   return (
     <div className={css.headerMain}>
       <div className={css.headerHeroInfo}>
@@ -33,16 +33,16 @@ export const HeaderMain = ({ partners }) => {
         </div>
       </div>
       <img className={css.headerMainImage} src={headerImage} alt="" />
-
       <div className={css.socials}>
         {" "}
         <FacebookLogo />
         <TwitterLogo />
         <LinkedInLogo />
       </div>
-      <Partners partners={partners} />
+      <p>Our Amazing Partners</p>;
+      <IconBlock icons={icons} />
     </div>
   );
 };
 
-HeaderMain.propTypes = { partners: PropTypes.array.isRequired };
+HeaderMain.propTypes = { icons: PropTypes.array.isRequired };

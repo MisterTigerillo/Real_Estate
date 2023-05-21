@@ -7,14 +7,14 @@ import { Container } from "components/Container";
 
 import css from "./Header.module.css";
 
-export const Header = ({ partners }) => (
+export const Header = ({ icons }) => (
   <header className={css.header}>
     <Container>
       <Logo />
       <Navigation />
-      <HeaderMain partners={partners} />
+      <HeaderMain icons={icons} />
     </Container>
   </header>
 );
 
-Header.propTypes = { partners: PropTypes.array.isRequired };
+Header.propTypes = { icons: PropTypes.array.isRequired };
