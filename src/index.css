@@ -1,10 +1,15 @@
 @import-normalize; /* bring in normalize.css styles */
 
 html {
-  padding: 1rem 3rem;
+  /* padding: 1rem 3rem; */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -40,7 +45,7 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: rgb(222, 236, 244);
+  background-color: rgb(178, 211, 230);
 }
 
 .content {

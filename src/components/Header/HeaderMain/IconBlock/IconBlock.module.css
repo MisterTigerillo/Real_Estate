@@ -1,0 +1,10 @@
+.iconBlock {
+  display: flex;
+  width: 770px;
+  justify-content: left;
+  align-items: center;
+}
+
+.icon:not(:last-child) {
+  margin-right: 50px;
+}

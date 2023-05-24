@@ -1,24 +1,16 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
+import { icons } from "components/icons";
 
 import css from "components/Header/HeaderMain/IconBlock/IconBlock.module.css";
 
-export const IconBlock = ({ sizeW, sizeH }) => {
-  // console.log(icons);
+export const IconBlock = () => {
   return (
     <div className={css.iconBlock}>
       {icons.map(icon => (
-        <svg
-          width={icon.width}
-          height={icon.height}
-          viewBox={icon.viewBox}
-          fill="none"
-          xlmns={icon.xlmns}
-        >
-          <path d={icon.d} fill={icon.fil} />
-        </svg>
+        <div className={css.icon} key={icon.name}>{icon.comp}</div>
       ))}
     </div>
   );
 };
 
-IconBlock.propTypes = { icons: PropTypes.array.isRequired };
+// IconBlock.propTypes = { icons: PropTypes.array.isRequired };
