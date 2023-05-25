@@ -45,7 +45,7 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  background-color: rgb(178, 211, 230);
+  /* background-color: rgb(178, 211, 230); */
 }
 
 .content {

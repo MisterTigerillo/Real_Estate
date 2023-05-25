@@ -1,14 +1,15 @@
 .header {
-  height: 100%;
-  background: rgb(222, 166, 174);
+  height: auto;
+  outline: 1px solid blue;
+  /* background: rgb(222, 166, 174); */
 }
 .header::after {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   right: 0;
-  z-index: 0;
+  /* z-index: 0; */
   background: #bdccff;
-  width: 30vw;
-  height: inherit;
+  width: 510px;
+  height: 660px;
 }
