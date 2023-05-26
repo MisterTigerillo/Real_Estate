@@ -1,10 +1,12 @@
 // import PropTypes from "prop-types";
 
 import css from "./HeaderMain.module.css";
+
 import { ReactComponent as FacebookLogo } from "assets/facebook.svg";
 import { ReactComponent as TwitterLogo } from "assets/twitter.svg";
 import { ReactComponent as LinkedInLogo } from "assets/linkedin.svg";
 import { ReactComponent as InstagramLogo } from "assets/instagram.svg";
+import { ReactComponent as HomeLogo } from "assets/Icon.svg";
 
 import headerImage from "assets/headerImage.jpg";
 
@@ -24,11 +26,11 @@ export const HeaderMain = () => {
             Now has you views woman noisy match money rooms.
           </p>
           <div className={css.search}>
-            {" "}
             <input
               className={css.headerInput}
               placeholder="Enter Zipcode to search properties"
             ></input>
+            <HomeLogo className={css.searchIcon} />
             <button className={css.headerButton}>Search Now!</button>
           </div>
         </div>

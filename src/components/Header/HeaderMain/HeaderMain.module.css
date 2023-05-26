@@ -1,7 +1,7 @@
 .headerMain {
   position: relative;
   width: 100%;
-  outline: 2px solid lightseagreen;
+  /* outline: 2px solid lightseagreen; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -32,12 +32,13 @@
 .headerHeroLabel {
   margin-bottom: 25px;
   font-size: 54px;
+  font-weight: 800;
   line-height: 70px;
 }
 .headerHeroDesc {
   margin-bottom: 50px;
   font-size: 17px;
-  /* font-weight: 400; */
+
   line-height: 25px;
   letter-spacing: 0.01em;
 }
@@ -53,19 +54,28 @@
   z-index: -1;
 }
 .search {
-  /* position: absolute; */
+  position: relative;
   /* top: 320px; */
   left: 0;
   margin-bottom: 50px;
-  outline: 1px solid yellow;
-  width: 760px;
+  /* outline: 1px solid yellow; */
+  width: 770px;
   height: 80px;
   z-index: 0;
 }
+.searchIcon {
+  position: absolute;
+  /* margin: 0; */
+  margin: 30px;
+  /* top: 30px; */
+  left: 0;
+}
 .headerInput {
+  outline: 1px solid lightgray;
+  padding-left: 75px;
   font-family: inherit;
   font-size: 20px;
-  width: 570px;
+  width: 600px;
   height: inherit;
 }
 .headerButton {
@@ -76,7 +86,7 @@
   /* position: absolute; */
   /* top: 0; */
   left: 100%;
-  width: 190px;
+  width: 170px;
   height: inherit;
   background: #f85a47;
 }

@@ -1,4 +1,33 @@
-/* .container {
+.container {
+  /* display: flex; */
+  /* min-height: 100%; */
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-} */
+  padding: 0 15px;
+  /* background-color: rgb(178, 211, 230); */
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: none;
+  }
+}
