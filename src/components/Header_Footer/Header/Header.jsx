@@ -1,7 +1,7 @@
 // import PropTypes from "prop-types";
 import { Logo } from "components/Logo/Logo";
-import { Navigation } from "components/Navigation/Navigation";
-import { HeaderMain } from "components/Header/HeaderMain/HeaderMain";
+import { Navigation } from "components/Header_Footer/Header/Navigation/Navigation";
+import { HeaderMain } from "components/Header_Footer/Header/HeaderMain/HeaderMain";
 
 import css from "./Header.module.css";
 

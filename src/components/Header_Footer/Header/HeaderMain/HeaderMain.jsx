@@ -1,16 +1,16 @@
 // import PropTypes from "prop-types";
+import { BsHouseHeart } from "react-icons/bs";
+import {
+  FaFacebookF,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa";
+import { IconBlock } from "components/Header_Footer/Header/HeaderMain/IconBlock/IconBlock";
 
 import css from "./HeaderMain.module.css";
 
-import { ReactComponent as FacebookLogo } from "assets/facebook.svg";
-import { ReactComponent as TwitterLogo } from "assets/twitter.svg";
-import { ReactComponent as LinkedInLogo } from "assets/linkedin.svg";
-import { ReactComponent as InstagramLogo } from "assets/instagram.svg";
-import { ReactComponent as HomeLogo } from "assets/Icon.svg";
-
 import headerImage from "assets/headerImage.jpg";
-
-import { IconBlock } from "components/Header/HeaderMain/IconBlock/IconBlock";
 
 export const HeaderMain = () => {
   return (
@@ -30,7 +30,7 @@ export const HeaderMain = () => {
               className={css.headerInput}
               placeholder="Enter Zipcode to search properties"
             ></input>
-            <HomeLogo className={css.searchIcon} />
+            <BsHouseHeart className={css.searchIcon} />
             <button className={css.headerButton}>Search Now!</button>
           </div>
         </div>
@@ -40,10 +40,10 @@ export const HeaderMain = () => {
       </div>
       <div className={css.socialsBlock}>
         {" "}
-        <FacebookLogo />
-        <TwitterLogo />
-        <LinkedInLogo />
-        <InstagramLogo />
+        <FaFacebookF size={21} />
+        <FaLinkedin size={21} />
+        <FaTwitter size={21} />
+        <FaInstagram size={21} />
       </div>
     </div>
   );
