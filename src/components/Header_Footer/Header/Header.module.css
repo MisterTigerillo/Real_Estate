@@ -1,7 +1,8 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* align-items: center; */
+  /* justify-content: space-between; */
   /* height: auto; */
   outline: 1px solid blue;
   /* background: rgb(222, 166, 174); */
