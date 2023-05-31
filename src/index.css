@@ -27,7 +27,7 @@ code {
 }
 
 a {
-  color: black;
+  /* color: black; */
   cursor: pointer;
   text-decoration: none;
 }
