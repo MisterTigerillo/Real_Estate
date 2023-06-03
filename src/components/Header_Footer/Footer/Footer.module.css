@@ -1,4 +1,4 @@
-.footer {
+.footer > div {
   display: flex;
-  background: lightgreen;
+  background: lightsalmon;
 }

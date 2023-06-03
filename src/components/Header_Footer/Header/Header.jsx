@@ -1,13 +1,19 @@
 // import PropTypes from "prop-types";
-import { Hat } from "components/Header_Footer/Hat/Hat";
-import { HeaderMain } from "components/Header_Footer/Header/HeaderMain/HeaderMain";
+import { Container } from "components/Container/Container";
+import { Logo } from "components/Header_Footer/Logo/Logo";
+import { Navigation } from "components/Header_Footer/Navigation/Navigation";
+// import { HeaderMain } from "components/Header_Footer/Header/HeaderMain/HeaderMain";
 
 import css from "./Header.module.css";
+import styles from "components/Container/Container.module.css";
 
 export const Header = () => (
   <header className={css.header}>
-    <Hat />
-    <HeaderMain />
+    <Container className={styles.additionalCont}>
+      <Logo />
+      <Navigation />
+      {/* <HeaderMain /> */}
+    </Container>
   </header>
 );
 

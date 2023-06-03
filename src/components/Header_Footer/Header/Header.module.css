@@ -1,19 +1,22 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  /* align-items: center; */
-  /* justify-content: space-between; */
-  /* height: auto; */
-  outline: 1px solid blue;
-  /* background: rgb(222, 166, 174); */
+  width: 100%;
+  min-height: 100px;
+
+  /* display: flex; */
+
+  /* align-items: center;
+  justify-content: space-between; */
+
+  padding: 10px 0;
+  background: lightpink;
 }
 .header::after {
-  content: "";
+  background: #bdccff;
+  /* content: ""; */
   position: absolute;
   top: 0;
   right: 0;
-  /* z-index: 0; */
-  background: #bdccff;
-  width: 510px;
-  height: 660px;
+
+  width: 90%;
+  height: 100%;
 }

@@ -14,7 +14,7 @@ import headerImage from "assets/headerImage.jpg";
 
 export const HeaderMain = () => {
   return (
-    <div className={css.headerMain}>
+    <main className={css.headerMain}>
       <div className={css.mainBlock}>
         <div className={css.headerHeroInfo}>
           <p className={css.headerHeroTitle}>RESIDENTIAL & OFFICE SPACES</p>
@@ -25,14 +25,17 @@ export const HeaderMain = () => {
             Much did had call new drew that kept. Limits expect wonder law she.
             Now has you views woman noisy match money rooms.
           </p>
-          <div className={css.search}>
+          <form className={css.search}>
             <input
+              type="text"
               className={css.headerInput}
               placeholder="Enter Zipcode to search properties"
             ></input>
             <BsHouseHeart className={css.searchIcon} />
-            <button className={css.headerButton}>Search Now!</button>
-          </div>
+            <button type="submit" className={css.headerButton}>
+              Search Now!
+            </button>
+          </form>
         </div>
         <img className={css.headerMainImage} src={headerImage} alt="" />
         <p className={css.partners}>Our Amazing Partners</p>
@@ -45,7 +48,7 @@ export const HeaderMain = () => {
         <FaTwitter size={21} />
         <FaInstagram size={21} />
       </div>
-    </div>
+    </main>
   );
 };
 

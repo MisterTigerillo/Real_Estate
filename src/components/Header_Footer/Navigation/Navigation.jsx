@@ -27,14 +27,12 @@ const NAV_PAGES = [
     link: "/",
   },
 ];
-export const Navigation = () => {
-  return (
-    <nav className={styles.navigation}>
-      <ul className={styles.navList}>
-        {NAV_PAGES.map(({ label, link }) => (
-          <NavItem key={label} label={label} link={link} />
-        ))}
-      </ul>
-    </nav>
-  );
-};
+export const Navigation = () => (
+  <nav className={styles.navigation}>
+    <ul className={styles.navList}>
+      {NAV_PAGES.map(({ label, link }) => (
+        <NavItem key={label} label={label} link={link} />
+      ))}
+    </ul>
+  </nav>
+);

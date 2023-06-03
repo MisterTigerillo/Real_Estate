@@ -3,6 +3,6 @@
 
 import css from "./RealEstate.module.css";
 
-export const RealEstate = () => {
-  return <main className={css.realEstate}>Main Page</main>;
-};
+export const RealEstate = () => (
+  <main className={css.realEstate}>Main Page</main>
+);
