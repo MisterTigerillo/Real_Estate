@@ -1,7 +1,8 @@
 .iconBlock {
   display: flex;
-  width: 770px;
-  justify-content: left;
+  flex-wrap: wrap;
+  /* width: 770px; */
+  /* justify-content: center; */
   align-items: center;
 }
 

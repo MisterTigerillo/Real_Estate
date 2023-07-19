@@ -1,0 +1,43 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import { slides } from "components/Main/Slide/slides";
+
+import "../../../../node_modules/swiper/swiper.css";
+import "../../../../node_modules/swiper/modules/effect-coverflow.css";
+import "../../../../node_modules/swiper/modules/navigation.css";
+
+// import { EffectoCoverFlow, Navigation } from "swiper/react";
+
+import css from "components/Main/Slide/Slide.module.css";
+
+// import Image from "assets/Image.jpg";
+// import { slides } from "components/Main/Slide/slides";
+// import css from "components/Main/Slide/Slide.module.css";
+
+export const Slider = () => {
+  return (
+    <div className={css.slider}>
+      <Swiper
+        modules={[Navigation]}
+        navigation
+        effect={"coverflow"}
+        grabCursor={true}
+        slidesPerView={1}
+        centeredSlides={true}
+        // coverflowEffect={{
+        //   rotate: 0,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 2.5,
+        // }}
+      >
+        {slides.map(slide => (
+          <SwiperSlide className={css.slide} key={slide.name}>
+            <img className={css.img} src={slide.comp} alt={slide.name} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};

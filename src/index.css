@@ -7,9 +7,18 @@
   box-sizing: border-box;
 }
 
+#root {
+  /* background: greenyellow; */
+
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 html,
 body {
-  /* min-height: 100vh; */
+  height: 100%;
 
   font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -39,7 +48,8 @@ li {
 }
 
 img {
-  vertical-align: top;
+  /* width: 100%; */
+  /* vertical-align: top; */
 }
 
 h1,
@@ -55,8 +65,8 @@ button {
   cursor: pointer;
 }
 
-.content {
+/* .content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+} */

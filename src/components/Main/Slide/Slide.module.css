@@ -1,0 +1,27 @@
+.slider {
+  width: 600px;
+  /* margin-left: 5px; */
+  /* min-width: 0; */
+  height: 560px;
+  /* outline: 1px solid firebrick; */
+  /* background-color: aqua; */
+  box-shadow: rgba(133, 133, 155, 0.25) 0px 60px 50px 10px,
+    rgba(0, 0, 0, 0.1) 0px 1px 1px -1px;
+}
+
+.slide {
+  position: relative;
+  padding-bottom: 95%;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* height: inherit; */
+  /* height: 100%; */
+  /* background-size: cover; */
+}

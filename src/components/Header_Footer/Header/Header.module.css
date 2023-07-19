@@ -1,22 +1,15 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 100px;
 
-  /* display: flex; */
+  /* background: lightpink; */
+  /* opacity: 40%; */
 
-  /* align-items: center;
-  justify-content: space-between; */
+  z-index: 1;
 
-  padding: 10px 0;
-  background: lightpink;
-}
-.header::after {
-  background: #bdccff;
-  /* content: ""; */
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  width: 90%;
-  height: 100%;
+  /* display: flex;
+  align-items: center; */
 }

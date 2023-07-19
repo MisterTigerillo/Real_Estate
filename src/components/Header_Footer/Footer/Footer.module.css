@@ -1,4 +1,8 @@
-.footer > div {
-  display: flex;
-  background: lightsalmon;
+.footer {
+  width: 100%;
+  min-height: 100px;
+
+  /* display: flex; */
+
+  /* background: lightsalmon; */
 }

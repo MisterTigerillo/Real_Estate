@@ -2,13 +2,19 @@
   max-width: 1200px;
 
   margin: 0 auto;
+
+  /* display: flex; */
+  /* align-self: center; */
+  /* outline: 2px solid lightcoral; */
+
   padding: 0 15px;
 }
 .additionalCont {
-  /* min-height: 100vh; */
-
+  min-height: inherit;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   /* flex-direction: column; */
 }
 

@@ -1,7 +1,7 @@
 // import PropTypes from "prop-types";
-import { icons } from "components/icons";
+import { icons } from "components/Main/IconBlock/icons";
 
-import css from "components/Header_Footer/Header/HeaderMain/IconBlock/IconBlock.module.css";
+import css from "components/Main/IconBlock/IconBlock.module.css";
 
 export const IconBlock = () => (
   <div className={css.iconBlock}>
