@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { SliderNavButtons } from "./SliderNavButtons/sliderNavButtons";
 import { Navigation } from "swiper/modules";
 
 import { slides } from "components/Main/Slide/slides";
@@ -20,7 +21,7 @@ export const Slider = () => {
     <div className={css.slider}>
       <Swiper
         modules={[Navigation]}
-        navigation
+        // navigation
         effect={"coverflow"}
         grabCursor={true}
         slidesPerView={1}
@@ -33,9 +34,12 @@ export const Slider = () => {
         // }}
       >
         {slides.map(slide => (
-          <SwiperSlide className={css.slide} key={slide.name}>
-            <img className={css.img} src={slide.comp} alt={slide.name} />
-          </SwiperSlide>
+          <>
+            <SwiperSlide className={css.slide} key={slide.name}>
+              <img className={css.img} src={slide.comp} alt={slide.name} />
+            </SwiperSlide>
+            <SliderNavButtons />
+          </>
         ))}
       </Swiper>
     </div>
