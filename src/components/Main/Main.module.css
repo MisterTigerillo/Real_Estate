@@ -24,7 +24,7 @@
 .mainBlockContainer::after {
   position: absolute;
   background: #bdccff;
-  opacity: 60%;
+  /* opacity: 60%; */
   content: "";
 
   top: 0;
@@ -35,25 +35,21 @@
 }
 
 .blockHead {
+  /* outline: 1px solid blue; */
   display: flex;
   align-items: flex-start;
   margin-bottom: 14px;
 }
 
 .blockContent {
-  width: 570px;
   padding-top: 40px;
+  flex: 0 1 50%;
   /* outline: 1px solid blue; */
 }
 
-.blockSlider {
-  outline: 2px solid teal;
-}
-
 .blockInfo {
-  width: inherit;
   /* position: relative; */
-  margin-right: 70px;
+  padding-right: 70px;
 }
 .blockTitle {
   margin-bottom: 25px;
@@ -78,14 +74,7 @@
   line-height: 25px;
   letter-spacing: 0.01em;
 }
-/* .mainImage {
-  position: absolute;
-  top: 11px;
-  right: 0;
-  max-width: 570px;
-  height: 300px;
-  z-index: -1;
-} */
+
 .blockSearch {
   position: relative;
   display: flex;
@@ -97,12 +86,9 @@
     rgba(0, 0, 0, 0.1) 0px 1px 1px -1px;
 
   margin-right: -188px;
-  margin-bottom: 145px;
+  /* margin-bottom: 145px; */
 
   z-index: 2;
-  /* width: 770px; */
-
-  /* z-index: 0; */
 }
 .blockSearchIcon {
   position: absolute;
@@ -168,4 +154,15 @@
   text-align: center;
   height: 100px;
   margin: 0 auto;
+}
+@media (max-width: 1199.98px) {
+  .blockHead {
+    /* width: 500px; */
+
+    /* z-index: 10; */
+  }
+
+  .mainBlockContainer::after {
+    /* display: none; */
+  }
 }

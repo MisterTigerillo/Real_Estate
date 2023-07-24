@@ -1,11 +1,14 @@
 .slider {
-  width: 600px;
-  /* margin-left: 5px; */
-  /* min-width: 0; */
-  height: 560px;
+  /* padding: 0; */
+  min-width: 0;
+  flex: 0 1 50%;
+  /* height: 570px; */
   /* outline: 1px solid firebrick; */
   /* background-color: aqua; */
-  box-shadow: rgba(133, 133, 155, 0.25) 0px 60px 50px 10px,
+
+  /* overflow: hidden; */
+  z-index: 1;
+  box-shadow: rgba(140, 140, 160, 0.25) 0px 60px 50px 10px,
     rgba(0, 0, 0, 0.1) 0px 1px 1px -1px;
 }
 
@@ -24,4 +27,11 @@
   /* height: inherit; */
   /* height: 100%; */
   /* background-size: cover; */
+}
+
+@media (max-width: 1199.98px) {
+  .slider {
+    width: 400px;
+    /* z-index: -1; */
+  }
 }

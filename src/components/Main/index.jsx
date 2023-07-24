@@ -15,7 +15,6 @@ import { BsHouseHeart } from "react-icons/bs";
 // } from "react-icons/fa";
 
 import css from "./Main.module.css";
-import cssSlider from "components/Main/Slide/Slide.module.css";
 
 export const Main = () => {
   return (
@@ -34,25 +33,23 @@ export const Main = () => {
                   Much did had call new drew that kept. Limits expect wonder law
                   she. Now has you views woman noisy match money rooms.
                 </p>
-
-                <form className={css.blockSearch}>
-                  <input
-                    type="text"
-                    className={css.blockInput}
-                    placeholder="Enter Zipcode to search properties"
-                  ></input>
-                  <BsHouseHeart className={css.blockSearchIcon} />
-                  <button type="submit" className={css.blockButton}>
-                    Search Now!
-                  </button>
-                </form>
               </div>
+              <form className={css.blockSearch}>
+                <input
+                  type="text"
+                  className={css.blockInput}
+                  placeholder="Enter Zipcode to search properties"
+                ></input>
+                <BsHouseHeart className={css.blockSearchIcon} />
+                <button type="submit" className={css.blockButton}>
+                  Search Now!
+                </button>
+              </form>
             </div>
-            {/* CONTENT */}
 
-            {/* SLIDER */}
             <Slider />
-            {/* SLIDER */}
+
+            {/* BLOCKHEAD */}
           </div>
           <div>
             <p className={css.partners}>Our Amazing Partners</p>
