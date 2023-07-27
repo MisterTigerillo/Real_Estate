@@ -25,7 +25,7 @@
   position: absolute;
   background: #bdccff;
   /* opacity: 60%; */
-  content: "";
+  /* content: ""; */
 
   top: 0;
   left: 68%;
@@ -39,6 +39,8 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 14px;
+  /* overflow: hidden; */
+  z-index: -1;
 }
 
 .blockContent {

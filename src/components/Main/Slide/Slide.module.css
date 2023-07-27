@@ -2,18 +2,16 @@
   /* padding: 0; */
   min-width: 0;
   flex: 0 1 50%;
-  /* height: 570px; */
+  /* height: 630px; */
   /* outline: 1px solid firebrick; */
-  /* background-color: aqua; */
 
   /* overflow: hidden; */
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  box-shadow: rgba(140, 140, 160, 0.25) 0px 60px 50px 10px,
-    rgba(0, 0, 0, 0.1) 0px 1px 1px -1px;
 }
 
 .slide {
-  position: relative;
+  height: 100%;
   padding-bottom: 95%;
 }
 

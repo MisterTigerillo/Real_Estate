@@ -6,12 +6,13 @@ import { Navigation } from "swiper/modules";
 import { slides } from "components/Main/Slide/slides";
 
 import "../../../../node_modules/swiper/swiper.css";
-import "../../../../node_modules/swiper/modules/effect-coverflow.css";
-import "../../../../node_modules/swiper/modules/navigation.css";
+// import "../../../../node_modules/swiper/modules/effect-coverflow.css";
+// import "../../../../node_modules/swiper/modules/navigation.css";
 
 // import { EffectoCoverFlow, Navigation } from "swiper/react";
 
 import css from "components/Main/Slide/Slide.module.css";
+import navi from "components/Main/Slide/SliderNavButtons/sliderNavButtons.module.css";
 
 // import Image from "assets/Image.jpg";
 // import { slides } from "components/Main/Slide/slides";
@@ -22,7 +23,11 @@ export const Slider = () => {
     <div className={css.slider}>
       <Swiper
         modules={[Navigation]}
-        // navigation
+        navigation={{
+          nextEl: `${navi.arrowRight}`,
+          // prevEl: {nav},
+          disabledClass: "swiper-button-disabled",
+        }}
         effect={"coverflow"}
         grabCursor={true}
         slidesPerView={1}
