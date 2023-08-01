@@ -11,6 +11,7 @@
 .rightArrow {
   height: 20px;
   cursor: pointer;
+  color: #fff;
 }
 
 .rightArrow:disabled {
