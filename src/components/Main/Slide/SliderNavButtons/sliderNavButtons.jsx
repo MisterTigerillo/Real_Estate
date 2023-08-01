@@ -5,16 +5,15 @@ import { BsChevronLeft } from "react-icons/bs";
 
 import css from "components/Main/Slide/SliderNavButtons/sliderNavButtons.module.css";
 
-export const SliderNavButtons = () => {
-  const swiper = useSwiper();
-
+export const SliderNavButtons = ({ navButtons, classPrev, classNext }) => {
+  console.log({ classPrev });
   return (
-    <div className={css.sliderNavButtons}>
-      <div className={css.sliderPrevButton} onClick={() => swiper.slidePrev()}>
-        <BsChevronLeft className={css.leftArrow} />
+    <div className={navButtons}>
+      <div className={classPrev}>
+        <BsChevronLeft />
       </div>
-      <div className={css.sliderNextButton} onClick={() => swiper.slideNext()}>
-        <BsChevronRight className={css.rightArrow} />
+      <div className={classNext}>
+        <BsChevronRight />
       </div>
     </div>
   );

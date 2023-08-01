@@ -14,7 +14,7 @@ import { BsHouseHeart } from "react-icons/bs";
 //   FaInstagram,
 // } from "react-icons/fa";
 
-import css from "./Main.module.css";
+import css from "./main.module.css";
 
 export const Main = () => {
   return (

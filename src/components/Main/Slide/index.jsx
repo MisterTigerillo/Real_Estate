@@ -9,37 +9,38 @@ import "../../../../node_modules/swiper/swiper.css";
 // import "../../../../node_modules/swiper/modules/effect-coverflow.css";
 // import "../../../../node_modules/swiper/modules/navigation.css";
 
-// import { EffectoCoverFlow, Navigation } from "swiper/react";
-
-import css from "components/Main/Slide/Slide.module.css";
-import navi from "components/Main/Slide/SliderNavButtons/sliderNavButtons.module.css";
-
-// import Image from "assets/Image.jpg";
-// import { slides } from "components/Main/Slide/slides";
-// import css from "components/Main/Slide/Slide.module.css";
+import css from "components/Main/Slide/slide.module.css";
+import cssNav from "components/Main/Slide/SliderNavButtons/sliderNavButtons.module.css";
 
 export const Slider = () => {
+  const prev = `${cssNav.leftArrow}`;
+  const next = `${cssNav.rightArrow}`;
+  console.log(next);
   return (
-    <div className={css.slider}>
+    <div className={css.sliderWrapper}>
       <Swiper
         modules={[Navigation]}
+        loop={true}
         navigation={{
-          nextEl: `${navi.arrowRight}`,
-          // prevEl: {nav},
-          disabledClass: "swiper-button-disabled",
+          prevEl: `.${prev}`,
+          nextEl: `.${next}`,
         }}
-        effect={"coverflow"}
         grabCursor={true}
         slidesPerView={1}
         centeredSlides={true}
+        className={css.slider}
       >
         {slides.map(slide => (
           <SwiperSlide className={css.slide} key={slide.name}>
-            <img className={css.img} src={slide.comp} alt={slide.name} />
+            <img src={slide.comp} alt={slide.name} />
           </SwiperSlide>
         ))}
-        <SliderNavButtons />
       </Swiper>
+      <SliderNavButtons
+        navButtons={cssNav.sliderNavButtons}
+        classPrev={prev}
+        classNext={next}
+      />
     </div>
   );
 };
