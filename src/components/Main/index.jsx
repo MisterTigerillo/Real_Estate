@@ -64,7 +64,41 @@ export const Main = () => {
         <FaTwitter size={21} />
         <FaInstagram size={21} />
       </div> */}
-      <div className={css.principles}>How it works?</div>
+      <div className={css.thumb}>
+        <h2>How it works?</h2>{" "}
+        <div className={css.principles}>
+          <div className={css.principle}>
+            <div>
+              <img src={css.logo} alt="" />
+            </div>
+            <h3>Research Suburbs</h3>
+            <p>
+              Wonder twenty hunted and put income set desire expect. Am cottage
+              calling.
+            </p>
+          </div>
+          <div className={css.principle}>
+            <div>
+              <img src={css.logo} alt="" />
+            </div>
+            <h3>Instant Valuation</h3>
+            <p>
+              Conveying or northward offending admitting perfectly my. Colonel
+              gravit and moonlight.
+            </p>
+          </div>
+          <div className={css.principle}>
+            <div>
+              <img src={css.logo} alt="" />
+            </div>
+            <h3>Track Property</h3>
+            <p>
+              Moderate children at of outweigh it. Unsatiable it considered
+              invitation he travelling insensible.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 };

@@ -4,15 +4,12 @@
 
   flex: 1 1 auto;
 
-  /* padding-top: 150px; */
   flex-wrap: wrap;
   /* z-index: 1; */
 }
 
 .mainBlock {
-  /* position: relative; */
-
-  /* outline: 2px solid violet; */
+  padding-bottom: 110px;
 }
 
 .mainBlockContainer {
@@ -32,6 +29,7 @@
 
   width: 200%;
   height: 100%;
+  z-index: -1;
 }
 
 .blockHead {
@@ -81,32 +79,30 @@
   position: relative;
   display: flex;
 
-  height: 86px;
   /* width: 568px; */
 
   box-shadow: rgba(172, 172, 180, 0.25) 0px 40px 50px -5px,
     rgba(0, 0, 0, 0.1) 0px 1px 1px -1px;
 
   margin-right: -188px;
-  /* margin-bottom: 145px; */
-
   z-index: 2;
 }
 .blockSearchIcon {
   position: absolute;
   width: 21px;
   height: 21px;
-  /* margin: 30px; */
   top: 33px;
   left: 33px;
 }
 .blockInput {
   padding-left: 75px;
+  height: 86px;
+
   width: 100%;
   border: 1px solid lightgray;
   font-family: inherit;
   font-size: 20px;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
 }
 .blockInput::placeholder {
   color: #31353b;
@@ -125,13 +121,6 @@
   cursor: pointer;
 }
 
-.blockSlider {
-  /* display: flex; */
-}
-
-.blockSlide {
-  width: 100%;
-}
 .socialsBlock {
   position: absolute;
   top: 80px;
@@ -158,13 +147,55 @@
   margin: 0 auto;
 }
 @media (max-width: 1199.98px) {
+  .mainBlockContainer {
+    padding-bottom: 30px;
+  }
   .blockHead {
-    /* width: 500px; */
+    margin-bottom: 30px;
 
     /* z-index: 10; */
   }
 
   .mainBlockContainer::after {
-    /* display: none; */
+    left: 70%;
+  }
+
+  .partners {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  .mainBlockContainer {
+    padding-top: 130px;
+  }
+  .mainBlockContainer::after {
+    left: 73%;
+  }
+  .blockHead {
+    display: block;
+    margin: 0;
+  }
+  .blockContent {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  .blockInfo {
+    padding-right: 0;
+  }
+  .blockLabel {
+    font-size: 35px;
+  }
+  .blockTitle,
+  .blockLabel {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .blockSearch {
+    margin: 0;
+  }
+  .partners {
+    /* text-align: center; */
+    margin-bottom: 20px;
   }
 }

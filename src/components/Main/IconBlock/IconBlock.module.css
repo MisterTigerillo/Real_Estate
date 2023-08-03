@@ -1,11 +1,28 @@
 .iconBlock {
+  max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   /* width: 770px; */
   /* justify-content: center; */
   align-items: center;
 }
-
+.icon {
+  align-self: baseline;
+}
 .icon:not(:last-child) {
   margin-right: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .iconBlock {
+    width: 660px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  .iconBlock {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    /* justify-content: center; */
+  }
 }

@@ -1,11 +1,11 @@
 .sliderWrapper {
-  /* padding: 0; */
+  /* position: relative; */
   min-width: 0px;
   flex: 0 1 50%;
-  /* height: 640px; */
+  padding: 0;
   /* outline: 1px solid yellowgreen; */
 
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -36,4 +36,7 @@
     /* width: 400px; */
     /* z-index: -1; */
   }
+}
+
+@media (max-width: 990.98px) {
 }
