@@ -139,12 +139,37 @@
   /* line-height: ; */
   margin-bottom: 30px;
 }
+
+.thumb {
+}
+
+.thumbTitle {
+  /* margin-bottom: 70px; */
+  font-weight: 600;
+  font-size: 40px;
+
+  line-height: 54.64px;
+}
+.thumbTitleCenter {
+  text-align: center;
+}
+
 .principles {
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 100px;
+  /* height: 100px; */
   margin: 0 auto;
+}
+.principle {
+}
+
+.principleIcon {
+  width: 90px;
+  max-height: 90px;
+  margin: 0 auto 50px;
+  border-radius: 20px;
+  background-color: #ff9900;
 }
 @media (max-width: 1199.98px) {
   .mainBlockContainer {
@@ -185,6 +210,7 @@
   }
   .blockLabel {
     font-size: 35px;
+    line-height: 50px;
   }
   .blockTitle,
   .blockLabel {

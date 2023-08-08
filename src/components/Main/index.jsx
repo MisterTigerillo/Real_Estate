@@ -1,6 +1,11 @@
 // import PropTypes from "prop-types";
 import { Container } from "components/Container";
-import { Slider } from "components/Main/Slide";
+import { Slider } from "components/Main/Slider";
+
+// import { Search } from "../Main/";
+import Search from "../../assets/principles/search.svg";
+import Hand from "../../assets/principles/hand.svg";
+import Brick from "../../assets/principles/brick.svg";
 
 import { IconBlock } from "components/Main/IconBlock";
 
@@ -53,6 +58,7 @@ export const Main = () => {
           </div>
           <div>
             <p className={css.partners}>Our Amazing Partners</p>
+
             <IconBlock />
           </div>
         </Container>
@@ -64,12 +70,12 @@ export const Main = () => {
         <FaTwitter size={21} />
         <FaInstagram size={21} />
       </div> */}
-      <div className={css.thumb}>
-        <h2>How it works?</h2>{" "}
+      <section className={css.thumb}>
+        <h2 className={css.thumbTitle}>How it works?</h2>
         <div className={css.principles}>
           <div className={css.principle}>
-            <div>
-              <img src={css.logo} alt="" />
+            <div className={css.principleIcon}>
+              <img src={Search} alt="search" />
             </div>
             <h3>Research Suburbs</h3>
             <p>
@@ -78,8 +84,8 @@ export const Main = () => {
             </p>
           </div>
           <div className={css.principle}>
-            <div>
-              <img src={css.logo} alt="" />
+            <div className={css.principleIcon}>
+              <img src={Hand} alt="hand" />
             </div>
             <h3>Instant Valuation</h3>
             <p>
@@ -88,8 +94,8 @@ export const Main = () => {
             </p>
           </div>
           <div className={css.principle}>
-            <div>
-              <img src={css.logo} alt="" />
+            <div className={css.principleIcon}>
+              <img src={Brick} alt="brick" />
             </div>
             <h3>Track Property</h3>
             <p>
@@ -98,7 +104,7 @@ export const Main = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 };
