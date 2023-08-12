@@ -1,13 +1,12 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 
 import { Navigation } from "swiper/modules";
 
 import "../../../../node_modules/swiper/swiper.css";
 import { slides } from "components/Main/Slider/slides";
 
-import css from "components/Main/Slider/Slider.module.css";
-import { SliderWrapper } from "./Slider.styled";
-import { SliderNavButtons } from "components/Main/Slider/SliderNavButtons";
+import { SliderWrapper, Slide } from "./Slider.styled";
+import { SliderNavButtons } from "./SliderNavButtons";
 
 export const Slider = () => {
   const prev = "prev";
@@ -24,12 +23,15 @@ export const Slider = () => {
         grabCursor={true}
         slidesPerView={1}
         centeredSlides={true}
-        className={css.slider}
+        style={{
+          boxShadow:
+            "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+        }}
       >
         {slides.map(slide => (
-          <SwiperSlide className={css.slide} key={slide.name}>
+          <Slide key={slide.name}>
             <img src={slide.comp} alt={slide.name} />
-          </SwiperSlide>
+          </Slide>
         ))}
       </Swiper>
       <SliderNavButtons prev={prev} next={next} />

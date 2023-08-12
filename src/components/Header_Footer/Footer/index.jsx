@@ -1,15 +1,13 @@
-import { Logo } from "components/Header_Footer/Logo/Logo";
+import { Footer } from "./Footer.styled";
+import { AdvancedContainer } from "components/Container/Container.styled";
+import { Logo } from "components/Header_Footer/Logo/Logo.styled";
 import { Navigation } from "components/Header_Footer/Navigation/Navigation";
-import { Container } from "components/Container";
 
-import css from "./Footer.module.css";
-import styles from "components/Container/Container.module.css";
-
-export const Footer = () => (
-  <footer className={css.footer}>
-    <Container className={styles.additionalCont}>
-      <Logo />
+export const FooterWrapper = () => (
+  <Footer>
+    <AdvancedContainer>
+      <Logo href="/">SmartSpace</Logo>
       <Navigation />
-    </Container>
-  </footer>
+    </AdvancedContainer>
+  </Footer>
 );

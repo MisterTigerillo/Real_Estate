@@ -1,18 +1,18 @@
 // import PropTypes from "prop-types";
-import { Container } from "components/Container";
-import { Logo } from "components/Header_Footer/Logo/Logo";
+import { Header } from "./Header.styled";
+import { AdvancedContainer } from "components/Container/Container.styled";
+import { Logo } from "components/Header_Footer/Logo/Logo.styled";
 import { Navigation } from "components/Header_Footer/Navigation/Navigation";
 
-import css from "./Header.module.css";
-import styles from "components/Container/Container.module.css";
-
-export const Header = () => (
-  <header className={css.header}>
-    <Container className={styles.additionalCont}>
-      <Logo />
-      <Navigation />
-    </Container>
-  </header>
-);
+export const HeaderWrapper = () => {
+  return (
+    <Header>
+      <AdvancedContainer>
+        <Logo href="/">SmartSpace</Logo>
+        <Navigation />
+      </AdvancedContainer>
+    </Header>
+  );
+};
 
 // Header.propTypes = { icons: PropTypes.array.isRequired };
