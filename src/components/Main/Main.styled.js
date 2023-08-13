@@ -196,7 +196,9 @@ export const SocialsBlock = styled.div`
   height: 160px;
 `;
 
-export const Sektor = styled.section``;
+export const Sektor = styled.section`
+  margin-bottom: 110px;
+`;
 
 export const SektorTitle = styled.h2`
   font-weight: 600;
@@ -207,25 +209,74 @@ export const SektorTitle = styled.h2`
 `;
 
 export const Principles = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  /* height: 100px; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 260px));
+  gap: 30px;
+  justify-content: space-between;
   margin: 70px auto 0;
+  padding: 0 35px;
 `;
 
-export const Principle = styled.div``;
+export const Principle = styled.div`
+  display: grid;
+  text-align: center;
+  justify-items: center;
+`;
 
 export const PrincipleIcon = styled.div`
-  /* display: flex; */
-  /* justify-content: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
 
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
   border-radius: 20px;
-  background-color: #9672ff;
 
   > img {
-    width: 90px;
-    height: 90px;
+    display: block;
   }
+`;
+
+export const PrincipleIconPurple = styled(PrincipleIcon)`
+  background-color: #9672ff;
+  box-shadow: 0px 100px 80px rgba(150, 114, 255, 0.07),
+    0px 64.8148px 46.8519px rgba(150, 114, 255, 0.0531481),
+    0px 38.5185px 25.4815px rgba(150, 114, 255, 0.0425185),
+    0px 20px 13px rgba(150, 114, 255, 0.035),
+    0px 8.14815px 6.51852px rgba(150, 114, 255, 0.0274815),
+    0px 1.85185px 3.14815px rgba(150, 114, 255, 0.0168519);
+`;
+
+export const PrincipleIconBlue = styled(PrincipleIcon)`
+  background-color: #4ddffd;
+  box-shadow: 0px 100px 80px rgba(77, 223, 253, 0.07),
+    0px 64.8148px 46.8519px rgba(77, 223, 253, 0.0531481),
+    0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185),
+    0px 20px 13px rgba(77, 223, 253, 0.035),
+    0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815),
+    0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);
+`;
+export const PrincipleIconPink = styled(PrincipleIcon)`
+  background-color: #f2b8ec;
+  box-shadow: 0px 100px 80px rgba(242, 184, 236, 0.07),
+    0px 64.8148px 46.8519px rgba(242, 184, 236, 0.0531481),
+    0px 38.5185px 25.4815px rgba(242, 184, 236, 0.0425185),
+    0px 20px 13px rgba(242, 184, 236, 0.035),
+    0px 8.14815px 6.51852px rgba(242, 184, 236, 0.0274815),
+    0px 1.85185px 3.14815px rgba(242, 184, 236, 0.0168519);
+`;
+
+export const PrincipleTitle = styled.h2`
+  margin-bottom: 15px;
+
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+`;
+export const PrincipleText = styled.p`
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 `;

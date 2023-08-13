@@ -4,16 +4,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 1200px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
 `;
 
 export const AdvancedContainer = styled(Container)`
-  min-height: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   @media (max-width: 1199.98px) {
     max-width: 970px;
   }
@@ -29,4 +24,12 @@ export const AdvancedContainer = styled(Container)`
     column-gap: 10px;
     row-gap: 15px;
   }
+`;
+
+export const FlexContainer = styled(Container)`
+  min-height: inherit;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;

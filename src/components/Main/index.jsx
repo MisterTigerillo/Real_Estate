@@ -21,7 +21,11 @@ import {
   SektorTitle,
   Principles,
   Principle,
-  PrincipleIcon,
+  PrincipleIconPurple,
+  PrincipleIconBlue,
+  PrincipleIconPink,
+  PrincipleTitle,
+  PrincipleText,
 } from "./Main.styled";
 
 import Search from "../../assets/principles/search.svg";
@@ -29,7 +33,10 @@ import Hand from "../../assets/principles/hand.svg";
 import Brick from "../../assets/principles/brick.svg";
 
 import { IconBlock } from "components/Main/IconBlock";
-import { AdvancedContainer } from "components/Container/Container.styled";
+import {
+  // Container,
+  AdvancedContainer,
+} from "components/Container/Container.styled";
 
 // import { IoIosArrowForward } from "react-icons/io";
 // import { IoIosArrowBack } from "react-icons/io";
@@ -89,34 +96,34 @@ export const Main = () => {
           <SektorTitle>How it works?</SektorTitle>
           <Principles>
             <Principle>
-              <PrincipleIcon>
+              <PrincipleIconPurple modifier={"purple"}>
                 <img src={Search} alt="search" />
-              </PrincipleIcon>
-              <h3>Research Suburbs</h3>
-              <p>
+              </PrincipleIconPurple>
+              <PrincipleTitle>Research Suburbs</PrincipleTitle>
+              <PrincipleText>
                 Wonder twenty hunted and put income set desire expect. Am
                 cottage calling.
-              </p>
+              </PrincipleText>
             </Principle>
             <Principle>
-              <PrincipleIcon>
+              <PrincipleIconBlue modifier={"blue"}>
                 <img src={Hand} alt="hand" />
-              </PrincipleIcon>
-              <h3>Instant Valuation</h3>
-              <p>
+              </PrincipleIconBlue>
+              <PrincipleTitle>Instant Valuation</PrincipleTitle>
+              <PrincipleText>
                 Conveying or northward offending admitting perfectly my. Colonel
                 gravit and moonlight.
-              </p>
+              </PrincipleText>
             </Principle>
             <Principle>
-              <PrincipleIcon>
+              <PrincipleIconPink modifier={"pink"}>
                 <img src={Brick} alt="brick" />
-              </PrincipleIcon>
-              <h3>Track Property</h3>
-              <p>
+              </PrincipleIconPink>
+              <PrincipleTitle>Track Property</PrincipleTitle>
+              <PrincipleText>
                 Moderate children at of outweigh it. Unsatiable it considered
                 invitation he travelling insensible.
-              </p>
+              </PrincipleText>
             </Principle>
           </Principles>
         </AdvancedContainer>
