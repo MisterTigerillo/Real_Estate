@@ -218,9 +218,26 @@ export const Principles = styled.div`
 `;
 
 export const Principle = styled.div`
+  position: relative;
   display: grid;
   text-align: center;
   justify-items: center;
+
+  ::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/gucc.svg");
+    /* background-color: lightcoral; */
+    /* opacity: 60%; */
+
+    top: 0;
+    left: 100%;
+
+    width: 100%;
+    height: 110px;
+    /* z-index: 10; */
+    /* max-width: 210px; */
+  }
 `;
 
 export const PrincipleIcon = styled.div`
@@ -230,41 +247,52 @@ export const PrincipleIcon = styled.div`
   width: 90px;
   height: 90px;
 
+  background-color: ${p => {
+    switch (p.modifier) {
+      case "purple":
+        return "#9672ff";
+      case "blue":
+        return "#4ddffd";
+      case "pink":
+        return "#f2b8ec";
+      default:
+        console.log("Invalid modifier");
+    }
+  }};
+  box-shadow: ${p => {
+    switch (p.modifier) {
+      case "purple":
+        return `0px 100px 80px rgba(150, 114, 255, 0.07),
+    0px 64.8148px 46.8519px rgba(150, 114, 255, 0.0531481),
+    0px 38.5185px 25.4815px rgba(150, 114, 255, 0.0425185),
+    0px 20px 13px rgba(150, 114, 255, 0.035),
+    0px 8.14815px 6.51852px rgba(150, 114, 255, 0.0274815),
+    0px 1.85185px 3.14815px rgba(150, 114, 255, 0.0168519);`;
+      case "blue":
+        return `0px 100px 80px rgba(77, 223, 253, 0.07),
+    0px 64.8148px 46.8519px rgba(77, 223, 253, 0.0531481),
+    0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185),
+    0px 20px 13px rgba(77, 223, 253, 0.035),
+    0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815),
+    0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);`;
+      case "pink":
+        return `0px 100px 80px rgba(242, 184, 236, 0.07),
+    0px 64.8148px 46.8519px rgba(242, 184, 236, 0.0531481),
+    0px 38.5185px 25.4815px rgba(242, 184, 236, 0.0425185),
+    0px 20px 13px rgba(242, 184, 236, 0.035),
+    0px 8.14815px 6.51852px rgba(242, 184, 236, 0.0274815),
+    0px 1.85185px 3.14815px rgba(242, 184, 236, 0.0168519);`;
+      default:
+        console.log("Invalid modifier");
+    }
+  }};
+
   margin-bottom: 50px;
   border-radius: 20px;
 
   > img {
     display: block;
   }
-`;
-
-export const PrincipleIconPurple = styled(PrincipleIcon)`
-  background-color: #9672ff;
-  box-shadow: 0px 100px 80px rgba(150, 114, 255, 0.07),
-    0px 64.8148px 46.8519px rgba(150, 114, 255, 0.0531481),
-    0px 38.5185px 25.4815px rgba(150, 114, 255, 0.0425185),
-    0px 20px 13px rgba(150, 114, 255, 0.035),
-    0px 8.14815px 6.51852px rgba(150, 114, 255, 0.0274815),
-    0px 1.85185px 3.14815px rgba(150, 114, 255, 0.0168519);
-`;
-
-export const PrincipleIconBlue = styled(PrincipleIcon)`
-  background-color: #4ddffd;
-  box-shadow: 0px 100px 80px rgba(77, 223, 253, 0.07),
-    0px 64.8148px 46.8519px rgba(77, 223, 253, 0.0531481),
-    0px 38.5185px 25.4815px rgba(77, 223, 253, 0.0425185),
-    0px 20px 13px rgba(77, 223, 253, 0.035),
-    0px 8.14815px 6.51852px rgba(77, 223, 253, 0.0274815),
-    0px 1.85185px 3.14815px rgba(77, 223, 253, 0.0168519);
-`;
-export const PrincipleIconPink = styled(PrincipleIcon)`
-  background-color: #f2b8ec;
-  box-shadow: 0px 100px 80px rgba(242, 184, 236, 0.07),
-    0px 64.8148px 46.8519px rgba(242, 184, 236, 0.0531481),
-    0px 38.5185px 25.4815px rgba(242, 184, 236, 0.0425185),
-    0px 20px 13px rgba(242, 184, 236, 0.035),
-    0px 8.14815px 6.51852px rgba(242, 184, 236, 0.0274815),
-    0px 1.85185px 3.14815px rgba(242, 184, 236, 0.0168519);
 `;
 
 export const PrincipleTitle = styled.h2`

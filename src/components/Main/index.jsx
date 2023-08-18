@@ -21,9 +21,7 @@ import {
   SektorTitle,
   Principles,
   Principle,
-  PrincipleIconPurple,
-  PrincipleIconBlue,
-  PrincipleIconPink,
+  PrincipleIcon,
   PrincipleTitle,
   PrincipleText,
 } from "./Main.styled";
@@ -96,9 +94,9 @@ export const Main = () => {
           <SektorTitle>How it works?</SektorTitle>
           <Principles>
             <Principle>
-              <PrincipleIconPurple modifier={"purple"}>
+              <PrincipleIcon modifier="purple">
                 <img src={Search} alt="search" />
-              </PrincipleIconPurple>
+              </PrincipleIcon>
               <PrincipleTitle>Research Suburbs</PrincipleTitle>
               <PrincipleText>
                 Wonder twenty hunted and put income set desire expect. Am
@@ -106,9 +104,9 @@ export const Main = () => {
               </PrincipleText>
             </Principle>
             <Principle>
-              <PrincipleIconBlue modifier={"blue"}>
+              <PrincipleIcon modifier="blue">
                 <img src={Hand} alt="hand" />
-              </PrincipleIconBlue>
+              </PrincipleIcon>
               <PrincipleTitle>Instant Valuation</PrincipleTitle>
               <PrincipleText>
                 Conveying or northward offending admitting perfectly my. Colonel
@@ -116,9 +114,9 @@ export const Main = () => {
               </PrincipleText>
             </Principle>
             <Principle>
-              <PrincipleIconPink modifier={"pink"}>
+              <PrincipleIcon modifier="pink">
                 <img src={Brick} alt="brick" />
-              </PrincipleIconPink>
+              </PrincipleIcon>
               <PrincipleTitle>Track Property</PrincipleTitle>
               <PrincipleText>
                 Moderate children at of outweigh it. Unsatiable it considered
