@@ -1,5 +1,7 @@
-import styled from "styled-components";
+import { Container } from "components/Container/Container.styled";
+import styled, { css } from "styled-components";
 import { BsHouseHeart } from "react-icons/bs";
+import lineIcon from "../../assets/group.svg";
 
 export const Page = styled.main`
   position: relative;
@@ -9,16 +11,8 @@ export const Page = styled.main`
   flex-wrap: wrap;
 `;
 
-export const MainBlock = styled.section`
-  padding-bottom: 110px;
-`;
-
-export const MainBlockContainer = styled.div`
+export const MainBlockContainer = styled(Container)`
   position: relative;
-  max-width: 1200px;
-
-  margin: 0 auto;
-  padding: 0 15px;
   padding-top: 183px;
 
   ::after {
@@ -196,47 +190,85 @@ export const SocialsBlock = styled.div`
   height: 160px;
 `;
 
-export const Sektor = styled.section`
-  margin-bottom: 110px;
+export const Section = styled.section`
+  padding-bottom: 110px;
+`;
+
+export const EnchancedSection = styled.section`
+  padding-top: 110px;
 `;
 
 export const SektorTitle = styled.h2`
   font-weight: 600;
   font-size: 40px;
 
-  line-height: 54.64px;
+  line-height: 1.375;
   text-align: center;
+
+  @media (max-width: 767.98px) {
+    font-size: 30px;
+  }
 `;
 
 export const Principles = styled.div`
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(3, minmax(auto, 260px));
   gap: 30px;
   justify-content: space-between;
   margin: 70px auto 0;
-  padding: 0 35px;
+
+  @media (min-width: 991px) {
+    padding: 0 35px;
+  }
+  @media (max-width: 767.98px) {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
 `;
 
+const after = css`
+  ::after {
+    content: "";
+    position: absolute;
+    background: url(${lineIcon}) 0 0 no-repeat;
+    background-size: contain;
+
+    top: 45px;
+    left: 90%;
+
+    width: 210px;
+    height: 11px;
+
+    ${p =>
+      p.rotation &&
+      css`
+        transform: rotate(-180deg);
+      `};
+
+    @media (max-width: 1199.98px) {
+      left: 75%;
+      width: 170px;
+    }
+    @media (max-width: 990.98px) {
+      left: 81%;
+      width: 110px;
+    }
+    @media (max-width: 767.98px) {
+    }
+  }
+`;
 export const Principle = styled.div`
   position: relative;
   display: grid;
   text-align: center;
   justify-items: center;
 
-  ::after {
-    content: "";
-    position: absolute;
-    background-image: url("../../assets/gucc.svg");
-    /* background-color: lightcoral; */
-    /* opacity: 60%; */
-
-    top: 0;
-    left: 100%;
-
-    width: 100%;
-    height: 110px;
-    /* z-index: 10; */
-    /* max-width: 210px; */
+  @media (max-width: 767.98px) {
+    margin-bottom: 35px;
+  }
+  @media (min-width: 767.98px) {
+    ${p => p.line && after};
   }
 `;
 
@@ -246,6 +278,9 @@ export const PrincipleIcon = styled.div`
   align-items: center;
   width: 90px;
   height: 90px;
+
+  margin-bottom: 50px;
+  border-radius: 20px;
 
   background-color: ${p => {
     switch (p.modifier) {
@@ -287,11 +322,12 @@ export const PrincipleIcon = styled.div`
     }
   }};
 
-  margin-bottom: 50px;
-  border-radius: 20px;
-
   > img {
     display: block;
+  }
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 35px;
   }
 `;
 
@@ -301,6 +337,7 @@ export const PrincipleTitle = styled.h2`
   font-size: 22px;
   font-weight: 600;
   line-height: 30px;
+  /* z-index: -10; */
 `;
 export const PrincipleText = styled.p`
   font-family: Roboto;

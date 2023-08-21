@@ -1,9 +1,9 @@
 // import PropTypes from "prop-types";
 import { Slider } from "components/Main/Slider";
+import { BestDeals } from "components/Main/BestDeals";
 
 import {
   Page,
-  MainBlock,
   MainBlockContainer,
   BlockHead,
   BlockContent,
@@ -17,7 +17,8 @@ import {
   BlockButton,
   Partners,
   // SocialsBlock,
-  Sektor,
+  Section,
+  EnchancedSection,
   SektorTitle,
   Principles,
   Principle,
@@ -36,8 +37,6 @@ import {
   AdvancedContainer,
 } from "components/Container/Container.styled";
 
-// import { IoIosArrowForward } from "react-icons/io";
-// import { IoIosArrowBack } from "react-icons/io";
 // import {
 //   FaFacebookF,
 //   FaLinkedin,
@@ -48,7 +47,7 @@ import {
 export const Main = () => {
   return (
     <Page>
-      <MainBlock>
+      <Section>
         <MainBlockContainer>
           {/* BLOCKHEAD */}
           <BlockHead>
@@ -81,7 +80,7 @@ export const Main = () => {
             <IconBlock />
           </div>
         </MainBlockContainer>
-      </MainBlock>
+      </Section>
       {/* <SocialsBlock className={css.socialsBlock}>
         {" "}
         <FaFacebookF size={21} />
@@ -89,11 +88,11 @@ export const Main = () => {
         <FaTwitter size={21} />
         <FaInstagram size={21} />
       </SocialsBlock> */}
-      <Sektor>
+      <EnchancedSection>
         <AdvancedContainer>
           <SektorTitle>How it works?</SektorTitle>
           <Principles>
-            <Principle>
+            <Principle line={true}>
               <PrincipleIcon modifier="purple">
                 <img src={Search} alt="search" />
               </PrincipleIcon>
@@ -103,7 +102,7 @@ export const Main = () => {
                 cottage calling.
               </PrincipleText>
             </Principle>
-            <Principle>
+            <Principle line={true} rotation={true}>
               <PrincipleIcon modifier="blue">
                 <img src={Hand} alt="hand" />
               </PrincipleIcon>
@@ -125,7 +124,8 @@ export const Main = () => {
             </Principle>
           </Principles>
         </AdvancedContainer>
-      </Sektor>
+      </EnchancedSection>
+      <BestDeals />
     </Page>
   );
 };
