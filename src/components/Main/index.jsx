@@ -1,133 +1,18 @@
 // import PropTypes from "prop-types";
-import { Slider } from "components/Main/Slider";
+import { Page } from "./Main.styled.js";
+import { Hero } from "./Hero";
+import { Hows } from "./Hows";
 import { BestDeals } from "components/Main/BestDeals";
-
-import {
-  Page,
-  MainBlockContainer,
-  BlockHead,
-  BlockContent,
-  BlockInfo,
-  BlockTitle,
-  BlockLabel,
-  BlockDesc,
-  BlockSearch,
-  BlockInput,
-  HouseIcon,
-  BlockButton,
-  Partners,
-  // SocialsBlock,
-  Section,
-  EnchancedSection,
-  SektorTitle,
-  Principles,
-  Principle,
-  PrincipleIcon,
-  PrincipleTitle,
-  PrincipleText,
-} from "./Main.styled";
-
-import Search from "../../assets/principles/search.svg";
-import Hand from "../../assets/principles/hand.svg";
-import Brick from "../../assets/principles/brick.svg";
-
-import { IconBlock } from "components/Main/IconBlock";
-import {
-  // Container,
-  AdvancedContainer,
-} from "components/Container/Container.styled";
-
-// import {
-//   FaFacebookF,
-//   FaLinkedin,
-//   FaTwitter,
-//   FaInstagram,
-// } from "react-icons/fa";
 
 export const Main = () => {
   return (
     <Page>
-      <Section>
-        <MainBlockContainer>
-          {/* BLOCKHEAD */}
-          <BlockHead>
-            {/* BLOCKCONTENT */}
-            <BlockContent>
-              <BlockInfo>
-                <BlockTitle>RESIDENTIAL & OFFICE SPACES</BlockTitle>
-                <BlockLabel>Smart Living Style for Smart People</BlockLabel>
-                <BlockDesc>
-                  Much did had call new drew that kept. Limits expect wonder law
-                  she. Now has you views woman noisy match money rooms.
-                </BlockDesc>
-              </BlockInfo>
-              <BlockSearch>
-                <BlockInput
-                  type="text"
-                  placeholder="Enter Zipcode to search properties"
-                ></BlockInput>
-                <HouseIcon />
-                <BlockButton type="submit">Search Now!</BlockButton>
-              </BlockSearch>
-            </BlockContent>
-            {/* BLOCKCONTENT */}
-
-            <Slider />
-            {/* BLOCKHEAD */}
-          </BlockHead>
-          <div>
-            <Partners>Our Amazing Partners</Partners>
-            <IconBlock />
-          </div>
-        </MainBlockContainer>
-      </Section>
-      {/* <SocialsBlock className={css.socialsBlock}>
-        {" "}
-        <FaFacebookF size={21} />
-        <FaLinkedin size={21} />
-        <FaTwitter size={21} />
-        <FaInstagram size={21} />
-      </SocialsBlock> */}
-      <EnchancedSection>
-        <AdvancedContainer>
-          <SektorTitle>How it works?</SektorTitle>
-          <Principles>
-            <Principle line={true}>
-              <PrincipleIcon modifier="purple">
-                <img src={Search} alt="search" />
-              </PrincipleIcon>
-              <PrincipleTitle>Research Suburbs</PrincipleTitle>
-              <PrincipleText>
-                Wonder twenty hunted and put income set desire expect. Am
-                cottage calling.
-              </PrincipleText>
-            </Principle>
-            <Principle line={true} rotation={true}>
-              <PrincipleIcon modifier="blue">
-                <img src={Hand} alt="hand" />
-              </PrincipleIcon>
-              <PrincipleTitle>Instant Valuation</PrincipleTitle>
-              <PrincipleText>
-                Conveying or northward offending admitting perfectly my. Colonel
-                gravit and moonlight.
-              </PrincipleText>
-            </Principle>
-            <Principle>
-              <PrincipleIcon modifier="pink">
-                <img src={Brick} alt="brick" />
-              </PrincipleIcon>
-              <PrincipleTitle>Track Property</PrincipleTitle>
-              <PrincipleText>
-                Moderate children at of outweigh it. Unsatiable it considered
-                invitation he travelling insensible.
-              </PrincipleText>
-            </Principle>
-          </Principles>
-        </AdvancedContainer>
-      </EnchancedSection>
+      <Hero />
+      <Hows />
       <BestDeals />
+      {/* <FourthSection /> */}
+      {/* <FifthSection /> */}
+      {/* <SixthSection/> */}
     </Page>
   );
 };
-
-// HeaderMain.propTypes = { icons: PropTypes.array.isRequired };

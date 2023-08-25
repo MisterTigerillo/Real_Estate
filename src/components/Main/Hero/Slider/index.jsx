@@ -2,8 +2,8 @@ import { Swiper } from "swiper/react";
 
 import { Navigation } from "swiper/modules";
 
-import "../../../../node_modules/swiper/swiper.css";
-import { slides } from "components/Main/Slider/slides";
+import "../../../../../node_modules/swiper/swiper.css";
+import { slides } from "components/Main/Hero/Slider/slides";
 
 import { SliderWrapper, Slide } from "./Slider.styled";
 import { SliderNavButtons } from "./SliderNavButtons";
