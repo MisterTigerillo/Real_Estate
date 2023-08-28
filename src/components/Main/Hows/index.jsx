@@ -2,7 +2,7 @@ import { AdvancedContainer } from "components/Container/Container.styled";
 import { EnchancedSection } from "components/Main/Main.styled";
 
 import {
-  SektorTitle,
+  HowsTitle,
   Principles,
   Principle,
   PrincipleIcon,
@@ -20,7 +20,7 @@ export const Hows = () => {
   return (
     <EnchancedSection>
       <AdvancedContainer>
-        <SektorTitle>How it works?</SektorTitle>
+        <HowsTitle>How it works?</HowsTitle>
         <Principles>
           <Principle line={true}>
             <PrincipleIcon modifier="purple">

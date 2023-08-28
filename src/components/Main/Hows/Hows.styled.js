@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 import lineIcon from "assets/group.svg";
 
-export const SektorTitle = styled.h2`
+export const HowsTitle = styled.h2`
   font-weight: 600;
   font-size: 40px;
 
