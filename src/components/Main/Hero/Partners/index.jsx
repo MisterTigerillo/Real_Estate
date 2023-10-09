@@ -8,7 +8,6 @@ export const Partners = () => (
     {" "}
     <PartnersTitle>Our Amazing Partners</PartnersTitle>
     <PartnersLogos>
-      {" "}
       {icons.map(icon => (
         <Logo key={icon.name}>{icon.comp}</Logo>
       ))}
