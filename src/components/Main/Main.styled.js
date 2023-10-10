@@ -10,6 +10,7 @@ export const Page = styled.main`
 
 export const EnchancedSection = styled.section`
   padding-top: 110px;
+  padding-bottom: 110px;
 `;
 
 export const SocialsBlock = styled.div`

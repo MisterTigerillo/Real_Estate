@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Estates = styled.div`
-  display: flex;
+  display: grid;
   column-gap: 30px;
 `;
