@@ -7,7 +7,7 @@ export const Navigation = styled.nav`
   row-gap: 10px;
   /* width: 200px; */
   /* background-color: teal; */
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 `;
 
 export const Button = styled.button`

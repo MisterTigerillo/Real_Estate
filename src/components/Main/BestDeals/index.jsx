@@ -25,7 +25,7 @@ export const BestDeals = () => {
               hunted and put income set desire expect.
             </DealsText>
           </DealsContent>
-          <DealsButton>View All Property </DealsButton>
+          <DealsButton>View All Property</DealsButton>
         </Deals>
 
         <DealsGallery>
