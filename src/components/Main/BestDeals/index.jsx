@@ -1,8 +1,7 @@
 import { AdvancedContainer } from "components/Container/Container.styled";
 import { EnchancedSection } from "../Main.styled";
 
-import { GalleryNav } from "./GalleryNav/";
-import { GalleryEstate } from "./GalleryEstate/";
+import { GalleryTabs } from "./DealsGallery";
 
 import {
   Deals,
@@ -10,7 +9,6 @@ import {
   DealsTitle,
   DealsText,
   DealsButton,
-  DealsGallery,
 } from "./BestDeals.styled";
 
 export const BestDeals = () => {
@@ -28,10 +26,7 @@ export const BestDeals = () => {
           <DealsButton>View All Property</DealsButton>
         </Deals>
 
-        <DealsGallery>
-          <GalleryNav />
-          <GalleryEstate />
-        </DealsGallery>
+        <GalleryTabs />
       </AdvancedContainer>
     </EnchancedSection>
   );

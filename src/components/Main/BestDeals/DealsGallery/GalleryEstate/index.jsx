@@ -1,5 +1,5 @@
 import { Estates } from "./GalleryEstate.styled";
-import { EstateElement } from "components/Main/BestDeals/GalleryEstate/EstateElement";
+import { EstateElement } from "components/Main/BestDeals/DealsGallery/GalleryEstate/EstateElement";
 
 import { v4 as uuidv4 } from "uuid";
 

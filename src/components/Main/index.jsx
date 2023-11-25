@@ -1,4 +1,5 @@
 // import PropTypes from "prop-types";
+
 import { Page } from "./Main.styled.js";
 import { Hero } from "./Hero";
 import { Hows } from "./Hows";

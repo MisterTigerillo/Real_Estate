@@ -45,4 +45,3 @@ export const DealsButton = styled.a`
     background-color: #b9473a;
   }
 `;
-export const DealsGallery = styled.div``;
